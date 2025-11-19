@@ -31,6 +31,7 @@ public class Ejemplo07 {
         int contador = 0;
 
         System.out.println("Ingrese las notas de los estudiantes de su materia");
+        // while (bandera == true)
         while (bandera) {
             System.out.println("Ingrese calificación");
             calificacion = entrada.nextDouble();
@@ -47,6 +48,12 @@ public class Ejemplo07 {
 
         promedio_final = suma_total / contador;
         System.out.printf("El promedio final es %.2f\n", promedio_final);
-
+/* Este  programa hace que ingrese por teclado las notas de los estudiantes
+   el cual queda guarda la nota en un variable el cual aqui el contador se lo usa
+   para dividir la nota total y ademas aqui el usuario es el que hace que finalice
+   el ciclo.
+        
+        */
     }
 }
+
