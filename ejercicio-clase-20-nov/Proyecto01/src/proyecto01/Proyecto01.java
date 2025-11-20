@@ -27,32 +27,29 @@ public class Proyecto01 {
         double costo_dia;
         double valor_cancelar;
         int contador = 1;
-        
 
         while (contador <= 5) {
-            System.out.println("Ingrese el nombre del empleado");
+            System.out.println("Ingrese nombre de empleado");
             nombre = entrada.nextLine();
 
-            System.out.printf("Ingrese dias trabajados");
+            System.out.println("Ingrese dias trabajados");
             dias = entrada.nextInt();
 
-            System.out.printf("Ingrese valor costo dia");
+            System.out.println("Ingrese valor de costo dia");
             costo_dia = entrada.nextDouble();
 
-            entrada.nextLine();
-
             valor_cancelar = dias * costo_dia;
-            
-            mensaje_final = String.format("%s",mensaje_final);
+            mensaje_final = String.format("%sNombre %s: dias %d, costo por dia"
+                    + " $%.2f, total $%.2f\n", mensaje_final, nombre, dias,
+                    costo_dia, valor_cancelar);
 
-            System.out.printf("%sNombre %s: dias %d,"
-                    + "costo por dia $%.2f, total $%.2f\n",
-                    mensaje_final, nombre,dias,costo_dia,valor_cancelar);
-
+            entrada.nextLine();
             contador = contador + 1;
-            }
-            System.out.printf("%s\n",mensaje_final);
-
         }
 
+        System.out.printf("%s\n", mensaje_final);
+
     }
+}
+
+    
